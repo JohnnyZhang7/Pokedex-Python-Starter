@@ -8,5 +8,6 @@ data = json.load(pokedex)
 for poke in data:
     if poke['name']['english'] == 'Wooper':
         print(poke)
-    if 'Ground' in poke['type']:
-        print(poke['name']['english'])
+    if 'Water' in poke['type']:
+        if 'Ground' in poke['type']:
+            print(poke['name']['english'])
